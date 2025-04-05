@@ -1,0 +1,11 @@
+[
+  {
+    "name": "iPhone X",
+    "category": "electronics",
+    "price": "30000",
+    "phone": "9999999999",
+    "location": "Mumbai",
+    "owner": "Ali",
+    "image": "iphone.jpg"
+  }
+]
