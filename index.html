@@ -1,28 +1,29 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upload Product</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lovely-Mew | Buy & Sell</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="gradient-background">
-        <header>
-            <h1>Upload Product</h1>
-            <a href="index.html">Home</a>
-        </header>
-        <form id="upload-form">
-            <input type="text" name="name" placeholder="Product Name" required>
-            <textarea name="description" placeholder="Description" required></textarea>
-            <input type="number" name="price" placeholder="Price" required>
-            <input type="text" name="location" placeholder="Location" required>
-            <input type="text" name="owner" placeholder="Owner Name" required>
-            <input type="file" name="image" id="image-input" required>
-            <div id="image-preview"></div>
-            <button type="submit">Upload</button>
-        </form>
-    </div>
-    <script src="upload.js"></script>
+  <div class="background"></div>
+  <header>
+    <h1>Lovely-Mew</h1>
+    <a href="upload.html" class="upload-button">Upload Product</a>
+    <input type="text" id="searchBar" placeholder="Search products..." />
+    <select id="categoryFilter">
+      <option value="">All Categories</option>
+      <option value="Electronics">Electronics</option>
+      <option value="Clothing">Clothing</option>
+      <option value="Books">Books</option>
+    </select>
+  </header>
+  <main>
+    <div id="productList" class="product-list"></div>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>
+
