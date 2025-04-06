@@ -13,9 +13,9 @@ document.addEventListener("DOMContentLoaded", () => {
           const card = document.createElement("div");
           card.className = "product-card";
 
-          // Path to image should match location of uploads folder relative to index.html
+          // Load image from same directory as index.html
           card.innerHTML = `
-            <img src="uploads/${product.image}" alt="Product Image" onerror="this.src='fallback.jpg'" />
+            <img src="${product.image}" alt="Product Image" onerror="this.src='fallback.jpg'" />
             <h2>${product.name}</h2>
             <p><strong>Category:</strong> ${product.category}</p>
             <p><strong>Price:</strong> ₹${product.price}</p>
@@ -51,4 +51,3 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error(err);
     });
 });
-
