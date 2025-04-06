@@ -1,4 +1,3 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,21 +8,42 @@
 </head>
 <body>
   <div class="background"></div>
-  <header>
-    <h1>Lovely-Mew</h1>
-    <a href="upload.html" class="upload-button">Upload Product</a>
-    <input type="text" id="searchBar" placeholder="Search products..." />
-    <select id="categoryFilter">
-      <option value="">All Categories</option>
-      <option value="Electronics">Electronics</option>
-      <option value="Clothing">Clothing</option>
-      <option value="Books">Books</option>
-    </select>
+
+  <header class="site-header">
+    <h1 class="logo">Lovely-Mew</h1>
+    <div class="controls">
+      <input type="text" id="searchBar" placeholder="Search products..." />
+      <select id="categoryFilter">
+        <option value="">All Categories</option>
+        <option value="phones">phones</option>
+        <option value="PC">PC</option>
+        <option value="laptops">laptops</option>
+        <option value="Electronics">Electronics</>
+        <option value="jobs">jobs</option>
+        <option value="Books">Books</option>
+        <option value="education">education</>
+        <option value="Clothing">Clothing</option>
+        <option value="softwares">softwares</option>
+        <option value="services">services</option>
+        <option value="bikes">bikes</option>
+        <option value="property">property</option>
+        <option value="rent">rent</>
+        <option value="surveys">survey</option>
+        <option value="others">others</option>
+      </select>
+    </div>
   </header>
+
   <main>
-    <div id="productList" class="product-list"></div>
+    <section id="productList" class="product-list">
+      <!-- Products will be injected here by script.js -->
+    </section>
   </main>
+
+  <footer class="footer">
+    <p>Powered by <strong>Lovely-Mew</strong> | @Iltronsweb_bot</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
-
