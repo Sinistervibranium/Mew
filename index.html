@@ -5,6 +5,108 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Lovely-Mew | Buy & Sell</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Extra stylish defaults */
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #fdfbfb, #ebedee);
+      color: #333;
+    }
+
+    .site-header {
+      background-color: #6e48aa;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .controls {
+      display: flex;
+      gap: 0.8rem;
+      flex-wrap: wrap;
+    }
+
+    .controls input,
+    .controls select {
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+
+    .product-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+
+    .product-card {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .product-details {
+      padding: 1rem;
+    }
+
+    .product-details h2 {
+      font-size: 1.2rem;
+      margin: 0 0 0.4rem;
+      color: #6e48aa;
+    }
+
+    .product-details p {
+      margin: 0.2rem 0;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      background: #6e48aa;
+      color: #fff;
+    }
+
+    .background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: repeating-linear-gradient(
+        45deg,
+        rgba(255, 255, 255, 0.05),
+        rgba(255, 255, 255, 0.05) 10px,
+        transparent 10px,
+        transparent 20px
+      );
+      pointer-events: none;
+      z-index: 0;
+    }
+  </style>
 </head>
 <body>
   <div class="background"></div>
@@ -15,21 +117,21 @@
       <input type="text" id="searchBar" placeholder="Search products..." />
       <select id="categoryFilter">
         <option value="">All Categories</option>
-        <option value="phones">phones</option>
+        <option value="phones">Phones</option>
         <option value="PC">PC</option>
-        <option value="laptops">laptops</option>
-        <option value="Electronics">Electronics</>
-        <option value="jobs">jobs</option>
+        <option value="laptops">Laptops</option>
+        <option value="Electronics">Electronics</option>
+        <option value="jobs">Jobs</option>
         <option value="Books">Books</option>
-        <option value="education">education</>
+        <option value="education">Education</option>
         <option value="Clothing">Clothing</option>
-        <option value="softwares">softwares</option>
-        <option value="services">services</option>
-        <option value="bikes">bikes</option>
-        <option value="property">property</option>
-        <option value="rent">rent</>
-        <option value="surveys">survey</option>
-        <option value="others">others</option>
+        <option value="softwares">Softwares</option>
+        <option value="services">Services</option>
+        <option value="bikes">Bikes</option>
+        <option value="property">Property</option>
+        <option value="rent">Rent</option>
+        <option value="surveys">Surveys</option>
+        <option value="others">Others</option>
       </select>
     </div>
   </header>
@@ -46,4 +148,4 @@
 
   <script src="script.js"></script>
 </body>
-</html>
+          </html>
