@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
           // Path to image should match location of uploads folder relative to index.html
           card.innerHTML = `
-            <img src="uploads/${product.image}" alt="Product Image" onerror="this.src='fallback.jpg';" />
+            <img src="uploads/${product.image}" alt="Product Image" onerror="this.src='fallback.jpg'" />
             <h2>${product.name}</h2>
             <p><strong>Category:</strong> ${product.category}</p>
             <p><strong>Price:</strong> ₹${product.price}</p>
@@ -51,3 +51,4 @@ document.addEventListener("DOMContentLoaded", () => {
       console.error(err);
     });
 });
+
